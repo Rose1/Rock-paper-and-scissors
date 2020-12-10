@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper and scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Rock, paper and scissors</h1>
+        <h2 id="attempts">You have 5 attempts</h2>
+    </div>
+    <div class="main-button">
+    </div>
+    <div class="player-options">
+        <div class="human">
+            <h2>Human</h2>
+            <div class="options">
+                <img src="img/rock.png" alt="rock" onclick="game('Rock')">
+                <img src="img/paper.png" alt="paper" onclick="game('Paper')">
+                <img src="img/scissors.png" alt="scissors" onclick="game('Scissors')">
+            </div>
+        </div>
+        <div class="computer">
+            <h2>Computer</h2>
+            <div class="options">
+                <img id="img" src="img/question_mark.png" alt="question-mark image">
+            </div>
+        </div>
+    </div>
+    <div class="score">
+        <h2>Punctuacion</h2>
+        <h2 id="message0"></h2>
+        <h2 id="message1"></h2>
+        <h2 id="message2"></h2>
+
+    </div>
+    <div class="final-result">
+        <h1>Final result</h1>
+        <h1 id="winner"></h1>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
